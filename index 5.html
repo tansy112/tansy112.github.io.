@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>Depression Web</title>
+   <link rel="stylesheet" href="style 1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+		<nav>
+			<a href="index 1.html"><img src="images/logo.png" alt=""></a>
+		 	<div class="nav-links" id="navlinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index 1.html">HOME</a></li>
+					<li><a href="index 2.html">SYMPTOMS AND PATTERNS</a></li>
+					<li><a href="index 3.html">TREATMENT</a></li>
+					<li><a href="index 4.html">RISK FACTOR</a></li>
+					<li><a href="index 5.html">SELF CARE</a></li>
+				</ul>
+			</div>	
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>SELF CARE</h1>
+	</section>
+</body>		
+	
+<!--------- self care -------->
+	<section class="self care">
+		<p>Self-care can play an important role in managing symptoms of depression and promoting overall well-being.</p>
+		
+		<h1>What you can do:</h1>	
+		<p>~ Try to keep doing activities you used to enjoy.</p>
+		<p>~ Stay connected to friends and family.</p>
+		<p>~ Exercise regularly, even if it’s just a short walk.</p>
+		<p>~ Stick to regular eating and sleeping habits as much as possible.</p>
+		<p>~ Avoid or cut down on alcohol and don’t use illicit drugs, which can make depression worse.</p>
+		<p>~ Talk to someone you trust about your feelings.</p>
+	    <p>~ Seek help from a healthcare provider.</p>
+	
+		<h2>If you have thoughts of suicide:</h2>
+		<p>~ Remember you are not alone, and that many people have gone through what you’re experiencing and found help.</p>
+		<p>~ Talk to someone you trust about how you feel.</p>
+		<p>~ Talk to a health worker, such as a doctor or counsellor.</p>
+		<p>~ Join a support group.</p>
+	
+	</section>
+<!--------JavaScript for Toggle Menu------->
+<script>
+		
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	    navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+			
+</script>
+</section>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>Depression Web</title>
+   <link rel="stylesheet" href="style 1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+		<nav>
+			<a href="index 1.html"><img src="images/logo.png" alt=""></a>
+		 	<div class="nav-links" id="navlinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index 1.html">HOME</a></li>
+					<li><a href="index 2.html">SYMPTOMS AND PATTERNS</a></li>
+					<li><a href="index 3.html">TREATMENT</a></li>
+					<li><a href="index 4.html">RISK FACTOR</a></li>
+					<li><a href="index 5.html">SELF CARE</a></li>
+				</ul>
+			</div>	
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+<div class="text-box">
+	<h1>What Is Depresssion ?</h1>
+	<p>Depression (major depressive disorder) is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. Fortunately, it is also treatable. Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home.</p>
+		
+</div>
+		
+	</section>
+</body>		
+	
+<!------ Type ------->
+			
+<section class="type">
+	<h1>Type Of Depression</h1>
+	<p>There are different types of depression, some of which develop due to specific circumstances.</p>
+	
+	<div class="row">
+		<div class="type-col">
+			<h3>Major Depression</h3>
+			<p>includes symptoms of depressed mood or loss of interest, most of the time for at least 2 weeks, that interfere with daily sctivities.</p>	
+	    </div>
+		<div class="type-col">
+			<h3>Perinatal Depression</h3>
+			<p>is depression that occurs during or after pregnancy. Depression that begins during pregnancy is prenatal depression and depression taht begins after the baby is born is postpartum depression.</p>	
+	    </div>
+		<div class="type-col">
+			<h3>Persistent Depressive Disorder</h3>
+			<p>(also called dysthymoa or dysthymic disorder) consists of less severe symptoms of depression that last much longer, usually for at least 2 years.</p>	
+	    </div>
+		<div class="type-col">
+			<h3>Depression With Symptoms Of Psychosis</h3>
+			<p>is a severe form of depression in which a person experiences pyschosis symptoms, such as delusions (disturbing, flase fixed beliefs) or hallucinations (hearing or seeing things otehrs do not hear or see).</p>	
+		</div>
+		<div class="type-col">
+			<h3>Seasonal Affective Disorder</h3>
+			<p>is depression that comes and goes with the seasons, with symptoms typically starting in the late fall and early winter and going aways during the spring and summer.</p>	
+		</div>
+	</div>
+</section>
+			
+<!-- --- Footer -------->
+	
+<section class="footer">
+	<h4>About Us</h4>
+	<p>We are provide some information about depression and ways to avoid it.</p>
+	<div id="icons">
+	<img class="facebook" src="images/facebook.png" alt="">
+	<img class="instagram" src="images/instagram.svg" alt="">
+	<img class="twitter" src="images/twitter.png" alt="">
+	</div>	
+</section>
+	
+<!--------JavaScript for Toggle Menu------->
+<script>
+		
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	    navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+			
+</script>
+	
+	
+</html>

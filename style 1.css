@@ -1,0 +1,414 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+}
+.header{
+	min-height: 60vh;
+	width: 100%;
+	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/image 1.jpeg");
+	background-position: center;
+	backgroung-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 1% 1%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 100px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 1px 20px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #DDE6ED;
+	text-decoration: none;
+	font-size: 12px;
+}
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 5px;
+	background: #526D82;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: #DDE6ED;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 40px;
+}
+.text-box p{
+	marign: 10px 0 10px;
+	font-size: 20px;
+	color: #DDE6ED;
+}
+
+nav .fa{
+	display: none;
+}
+
+@media(max-width: 700px){
+	.text-box h1{
+		font-size: 20px;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		baqckgorund: #526D82;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fa{
+		display: block;
+		color: #DDE6ED;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+}
+
+/*----- type -----*/
+
+.type{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+	colour: #DDE6ED;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	border-color: #27374D;
+}
+.type-col{
+	flex-basis: 31%;
+	background: #9DB2BF;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.type-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+	.row{ 
+		flex-direction: column;
+	}	
+}
+
+/*---------footer-------*/
+
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.facebook{
+	padding: 0px;
+	width: 20px;
+	text-decoration: none;
+}
+.facebook:hover{
+	opacity: 0.7;
+}
+.facebook{
+	color: transparent;
+}
+
+.instagram{
+	padding: 0px;
+	width: 20px;
+	text-decoration: none;
+}
+.instagram:hover{
+	opacity: 0.7;
+}
+.instagram{
+	color: transparent;
+}
+
+.twitter{
+	padding: 0px;
+	width: 20px;
+	text-decoration: none;
+}
+.twitter:hover{
+	opacity: 0.7;
+}
+.twitter{
+	color: white;
+}
+
+/*----------- symptoms and patterns --------*/
+
+.sub-header{
+	height: 50vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/image 2.jpeg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #DDE6ED;
+}
+.sub-header h1{
+	margin-top: 30px;
+}
+
+.symptoms and patterns{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+h2{
+	font-size: 20px;
+	font-weight: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+p{
+	colour: #DDE6ED;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 22px;
+	padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #27374D;
+  padding: 6px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.symptoms-col{
+	flex-basis: 31%;
+	background: #9DB2BF;
+	border-radius: 60px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.symptoms-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*----- explain -----*/
+
+.explain{
+	width: 80%;
+	margin: auto;
+	text-align: justify;
+	padding-top: 20px;
+}
+
+.explain p{
+	colour: #DDE6ED;
+	font-size: 20px;
+	font-weight: 350;
+	line-height: 22px;
+	padding: 10px;
+}
+
+/*----------- treatment --------*/
+
+.treatment{
+	background: #DDE6ED;
+}
+
+.treatment h1{
+	font-size: 20px;
+	font-weight: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #27374D;
+}
+.treatment h2{
+	font-size: 20px;
+	font-weight: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #27374D;
+}
+.treatment h3{
+	font-size: 20px;
+	font-weight: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #27374D;
+}
+.treatment h4{
+	font-size: 20px;
+	font-weight: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #27374D;
+}
+/*----------- risk factor --------*/
+
+.risk factor{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background: #9DB2BF;
+}
+.risk factor p{
+	colour: #DDE6ED;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+	padding-bottom: 10px;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	border-color: #27374D;
+	padding-bottom: 20px;
+}
+.risk-col{
+	flex-basis: 600%;
+	background: #9DB2BF;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.risk-col p{
+	colour: #DDE6ED;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+	padding-bottom: 10px;
+}
+
+.risk factor h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.risk-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+@media(max-width: 700px){
+	.row{ 
+		flex-direction: column;
+	}	
+}
+
+/*----------- self care --------*/
+
+.self care{
+	background: #9DB2BF;
+}
+.self care h1{
+	font-size: 10px;
+	font-weight: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	color: #27374D;
+	padding-left: 20px;
+}
+.self care h2{
+	colour: #DDE6ED;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	text-align: left
+}
+.self care p{
+	colour: #DDE6ED;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}

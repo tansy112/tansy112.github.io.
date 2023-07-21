@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>Depression Web</title>
+   <link rel="stylesheet" href="style 1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+		<nav>
+			<a href="index 1.html"><img src="images/logo.png" alt=""></a>
+		 	<div class="nav-links" id="navlinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index 1.html">HOME</a></li>
+					<li><a href="index 2.html">SYMPTOMS AND PATTERNS</a></li>
+					<li><a href="index 3.html">TREATMENT</a></li>
+					<li><a href="index 4.html">RISK FACTOR</a></li>
+					<li><a href="index 5.html">SELF CARE</a></li>
+				</ul>
+			</div>	
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>SYMPTOMS AND PATTERNS</h1>
+	</section>
+</body>		
+	
+<!--------- symptoms and patterns content -------->
+	
+<section class="symptoms and patterns">
+	<h2>Depression symptoms can vary from mild to severe and can include:</h2>
+	
+		<div class="grid-container">
+  
+  <div class="grid-item"><p>Feeling sad or having a depressed mood.</p></div>
+  <div class="grid-item"><p>Loss of interest or pleasure in activities once enjoyed.</p></div>
+  <div class="grid-item"><p>Changes in appetite — weight loss or gain unrelated to dieting.</p></div>  
+  <div class="grid-item"><p>Trouble sleeping or sleeping too much.</p></div>
+  <div class="grid-item"><p>Loss of energy or increased fatigue.</p></div>
+  <div class="grid-item"><p>Increase in purposeless physical activity (e.g., inability to sit still, pacing, handwringing) or slowed movements or speech (these actions must be severe enough to be observable by others).</p></div>  
+  <div class="grid-item"><p>Feeling worthless or guilty.</p></div>
+  <div class="grid-item"><p>Difficulty thinking, concentrating or making decisions.</p></div>
+  <div class="grid-item"><p>Thoughts of death or suicide.</p></div>
+	</div>
+</section>
+  
+  <!------ Explain ------->
+			
+			<section class="explain">
+	<p>Symptoms must last at least two weeks and must represent a change in your previous level of functioning for a diagnosis of depression.</p>
+    <p>Also, medical conditions (e.g., thyroid problems, a brain tumor or vitamin deficiency) can mimic symptoms of depression so it is important to rule out general medical causes.</p>
+	
+	<p>Depression affects an estimated one in 15 adults (6.7%) in any given year. And one in six people (16.6%) will experience depression at some time in their life. Depression can occur at any time, but on average, first appears during the late teens to mid-20s. Women are more likely than men to experience depression. Some studies show that one-third of women will experience a major depressive episode in their lifetime. There is a high degree of heritability (approximately 40%) when first-degree relatives (parents/children/siblings) have depression.</p>
+			
+			</section>
+<!-- --- Footer -------->
+	
+<section class="footer">
+	<h4>About Us</h4>
+	<p>We are provide some information about depression and ways to avoid it.</p>
+	<div id="icons">
+	<img class="facebook" src="images/facebook.png" alt="">
+	<img class="instagram" src="images/instagram.svg" alt="">
+	<img class="twitter" src="images/twitter.png" alt="">
+	</div>	
+</section>
+	
+<!--------JavaScript for Toggle Menu------->
+<script>
+		
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	    navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+			
+</script>
+
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>Depression Web</title>
+   <link rel="stylesheet" href="style 1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+		<nav>
+			<a href="index 1.html"><img src="images/logo.png" alt=""></a>
+		 	<div class="nav-links" id="navlinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index 1.html">HOME</a></li>
+					<li><a href="index 2.html">SYMPTOMS AND PATTERNS</a></li>
+					<li><a href="index 3.html">TREATMENT</a></li>
+					<li><a href="index 4.html">RISK FACTOR</a></li>
+					<li><a href="index 5.html">SELF CARE</a></li>
+				</ul>
+			</div>	
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>TREATMENT</h1>
+	</section>
+</body>		
+	
+<!--------- treatment -------->
+	<section class="treatment">
+	<h1>Medication</h1>
+	<p>Brain chemistry may contribute to an individual’s depression and may factor into their treatment. For this reason, antidepressants might be prescribed to help modify one’s brain chemistry. These medications are not sedatives, “uppers” or tranquilizers. They are not habit-forming. Generally antidepressant medications have no stimulating effect on people not experiencing depression</p>
+		
+	<h2>Psychotherapy</h2>
+	<p>Psychotherapy, or “talk therapy,” is sometimes used alone for treatment of mild depression; for moderate to severe depression, psychotherapy is often used along with antidepressant medications. Cognitive behavioral therapy (CBT) has been found to be effective in treating depression. CBT is a form of therapy focused on the problem solving in the present. CBT helps a person to recognize distorted/negative thinking with the goal of changing thoughts and behaviors to respond to challenges in a more positive manner.</p>
+	
+	<h3>Electroconvulsive Therapy (ECT)</h3>
+	<p>ECT is a medical treatment that has been most commonly reserved for patients with severe major depression who have not responded to other treatments. It involves a brief electrical stimulation of the brain while the patient is under anesthesia. A patient typically receives ECT two to three times a week for a total of six to 12 treatments. It is usually managed by a team of trained medical professionals including a psychiatrist, an anesthesiologist and a nurse or physician assistant. ECT has been used since the 1940s, and many years of research have led to major improvements and the recognition of its effectiveness as a mainstream rather than a "last resort" treatment.</p>
+	
+	<h4>Self-help and Coping</h4>
+	<p>There are a number of things people can do to help reduce the symptoms of depression. For many people, regular exercise helps create positive feeling and improves mood. Getting enough quality sleep on a regular basis, eating a healthy diet and avoiding alcohol (a depressant) can also help reduce symptoms of depression.</p>
+	
+
+<!-- --- Footer -------->
+	
+<section class="footer">
+	<h4>About Us</h4>
+	<p>We are provide some information about depression and ways to avoid it.</p>
+	<div id="icons">
+	<img class="facebook" src="images/facebook.png" alt="">
+	<img class="instagram" src="images/instagram.svg" alt="">
+	<img class="twitter" src="images/twitter.png" alt="">
+	</div>	
+</section>
+	
+<!--------JavaScript for Toggle Menu------->
+<script>
+		
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	    navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+			
+</script>
+
+	</section>
+</html>

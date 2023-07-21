@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>Depression Web</title>
+   <link rel="stylesheet" href="style 1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+		<nav>
+			<a href="index 1.html"><img src="images/logo.png" alt=""></a>
+		 	<div class="nav-links" id="navlinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index 1.html">HOME</a></li>
+					<li><a href="index 2.html">SYMPTOMS AND PATTERNS</a></li>
+					<li><a href="index 3.html">TREATMENT</a></li>
+					<li><a href="index 4.html">RISK FACTOR</a></li>
+					<li><a href="index 5.html">SELF CARE</a></li>
+				</ul>
+			</div>	
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>RISK FACTOR</h1>
+	</section>
+</body>		
+	
+<!--------- risk factor -------->
+	<section class="risk factor">
+	<p>Depression can affect anyone—even a person who appears to live in relatively ideal circumstances.</p>
+		
+	<p>Several factors can play a role in depression:</p>
+	</section>
+	
+	<div class="row">
+		<div class="risk-col">
+			<h3>Biochemistry</h3>
+			<p> Differences in certain chemicals in the brain may contribute to symptoms of depression.</p>	
+	    </div>
+		<div class="risk-col">
+			<h3>Genetics</h3>
+			<p>Depression can run in families. For example, if one identical twin has depression, the other has a 70 percent chance of having the illness sometime in life.</p>	
+	    </div>
+		<div class="risk-col">
+			<h3>Personality</h3>
+			<p>People with low self-esteem, who are easily overwhelmed by stress, or who are generally pessimistic appear to be more likely to experience depression.</p>	
+		</div>
+		<div class="risk-col">
+			<h3>Environmrntal Factors</h3>
+			<p> Continuous exposure to violence, neglect, abuse or poverty may make some people more vulnerable to depression.</p>	
+		</div>
+	</div>
+
+<!-- --- Footer -------->
+	
+<section class="footer">
+	<h4>About Us</h4>
+	<p>We are provide some information about depression and ways to avoid it.</p>
+	<div id="icons">
+	<img class="facebook" src="images/facebook.png" alt="">
+	<img class="instagram" src="images/instagram.svg" alt="">
+	<img class="twitter" src="images/twitter.png" alt="">
+	</div>	
+</section>
+	
+<!--------JavaScript for Toggle Menu------->
+<script>
+		
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	    navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+			
+</script>
+
+
+</html>
